@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style3.css"/>
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+	 <div class="container dark">
+        <div class="content">
+            <div class="logo">
+                <img src="Arshiq Work logo.jpg" style="width:180px; height:100%;float:left; margin-top:-54px" />
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index (1).html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="clear"></div>
+    </div>
+    <br />
+    <br />
+    	<h1> QUICK RESERVATIONS</h1>
+        <h2> -Book Your Table Now- </h2>
+        <br />
+        
+        <div class="border">
+        	<img src="reservation.jpg" id="reserv" />
+            <p> Reservation Form </p>
+            <form>
+            <table>
+            <td>
+            <tr>
+<input type="text" autofocus="autofocus" required placeholder="Name" id="name"/>
+   <br />
+   <br />
+   <br />
+   <input type="text" placeholder="contact Number" id="contact"/>
+   <br /> <br /> <br />
+   <textarea placeholder="Remarks"></textarea>
+            </tr>
+            </td>
+            </table>
+            </form>
+            <div class="box"> <h3><a href="#" onclick="sub()">Make Reservation</a></h3></div>
+        </div>
+          <div class="footer">
+        
+        	 <h3 class="info"> <a href="#">info@shale.pizza.com</a> </h3>
+        </div>
+
+
+</body>
+</html>
+<script>
+	function sub()
+	{
+	  var name= document.getElementById("name").value;
+	  var num= document.getElementById("contact").value;
+	  var x= "[(0-9)].{11}"
+	  if(name=="")
+	  {
+		  alert("Fill Name Field");
+		  }
+		  
+	 if(num=="")
+	 {
+		 alert("Fill Contact field");
+		 }
+		 
+	if(num!=x)
+	{
+		alert("Invalid Data");
+		}
+	}
+</script>

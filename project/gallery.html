@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css sheet2.css" rel="stylesheet" type="text/css"/>
+<title>Untitled Document</title>
+</head>
+
+<body background="22.JPG">
+<input type="button" class="button1" value="&#8249" onclick="plusDivs(-1)" />
+<input type="button" class="button2" value="&#8250" onclick="plusDivs(1)"/>
+
+
+<div class="container">
+
+<div class="header"><img src="Arshiq Work logo.jpg" class="logo" style="margin-top:1.5px;float:left; margin-left:0%"/>
+<ul>
+                    <li><a href="index (1).html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+                
+</div>
+<div class="content">
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="IMG_9134.JPG" style="width:100%;position:absolute">
+  <img class="mySlides" src="IMG_9131.JPG" style="width:100%;position:absolute">
+  <img class="mySlides" src="IMG_9141.JPG" style="width:100%; position:absolute">
+  <img class="mySlides" src="IMG_9145.JPG" style="width:100%; position:absolute">
+  <img class="mySlides" src="IMG_9202.JPG" style="width:100%;position:absolute">
+  <img class="mySlides" src="IMG_9162.JPG" style="width:100%; position:absolute">
+  <img class="mySlides" src="IMG_9156.JPG" style="width:100%;position:absolute">
+</div>
+</div>
+<div class="slider">
+<div class="w3-center">
+  <button class="w3-buttondemo" onclick="currentDiv(1)"></button> 
+  <button class="w3-buttondemo" onclick="currentDiv(2)"></button> 
+  <button class="w3-buttondemo" onclick="currentDiv(3)"></button> 
+</div>
+</div>
+<div class="footer"><div class="social"><h5 style="text-align:center;font-size:50px">WE ARE SOCIAL</h5>
+<p style="margin-top:-65px; font-size:20px; text-align:inherit;color:#000; margin-left:15px;font-style:italic"><b>As enthusiast for musical and performance,SHALE PIZZA is all about the performance -the performance which only knows how to entertain! We bake </b><span style="margin-left:380px"><b>pizza with love,emotion,drama,energy and a lil bit of fire :)</b></span></p>
+</div>
+<ul style="margin-right:310px">
+                <li><a href="index (1).html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+            </ul>
+            <p style="float:none; margin-top:75px; color:white;margin-left:570px">info@shale.pizza.com</p>
+            <p style="float:none; margin-top:5px; color:white;margin-left:540px">© 2018 Shale. Pizza PVT (Ltd.)</p>
+            </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>

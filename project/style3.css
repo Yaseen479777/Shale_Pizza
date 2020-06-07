@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+}
+
+.dark{
+    background-color: #0D0A04;
+    color: white;
+    height: 100px;
+}
+
+.logo{
+    display:inline-block;
+    float: left;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.navbar{
+    float: right;
+    line-height: 100px;
+}
+ul li{
+
+    width: 130px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: block;
+}
+
+ul li a:hover{
+    color: red;
+}
+
+h1
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 50px;
+	text-align: center;
+	}
+h2
+{
+	font-family: "Comic Sans MS", cursive;
+	text-align: center;
+	color : red;
+	}
+.border
+{
+	height: 500px;
+	width: 100%;
+	background-color: white;
+ 	}
+#reserv
+{
+	height: 400px;
+	width: 400px;
+	margin-left: 100px;
+	margin-top: 50px;
+	}
+form
+{
+	float: right;
+	margin-right: 150px;
+	margin-top: -300px;
+	}
+p
+{
+	float: right;
+	font-size: 40px;
+	margin-right: 190px;
+	margin-top: 50px;
+	}
+textarea
+{
+	height: 100px;
+	width: 300px;
+	resize: none;
+	}
+.box
+{
+	height: 50px;
+	width: 180px;
+	float:right; background-color: black;
+	margin-right: 230px;
+	margin-top: -50px;
+	
+	}
+h3
+{
+	color: white;
+	text-align:center;
+	font-family:"Comic Sans MS", cursive;
+	margin-top: 10px;
+	}
+h3 a
+{
+	text-decoration: none;
+	color: white;
+	}
+h3 a:hover
+{
+	color: red;
+	}
+.footer
+{
+	height: 80px;
+	width: 100%;
+	background-color: black;
+    position:absolute;
+	margin-bottom: -50px;
+	}
